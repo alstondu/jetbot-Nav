@@ -9,6 +9,9 @@ The aim of the project is to deploy the programmes on the JetBot robot to enable
 + The [Python version programme](https://github.com/alstondu/jetbot-ass3/tree/main/Jetbotpy)  is designed to run in Python 3.6 environment. 
 + The [ROS version programme](https://github.com/alstondu/jetbot-ass3/tree/main/jetbot) is implemented as a series of ROS nodes that can be executed individually using `rosrun` or run simultaneously by running a launch file using `roslaunch`.
 
+********
+
+
 ## Execution Commands
 <details open>
 <summary>Python Scripts</summary>
@@ -78,26 +81,28 @@ roslaunch jetbot jetbot.launch
 ```
 
 </details>
+
+
+
 ******
+
+
+
 ## Structure of the Repository
 
 <pre>
 📦Assignment 3: Jetbot 
- ┣ 📂Code
- ┃ ┣ 📂jetbot
- ┃ ┣ 📂Jetbotpy
- ┃ ┗ 📂yolov5
- ┣ 📂Testing Videos
- ┃ ┣ 📂Images
- ┃ ┣ 📜black line following video.mp4
- ┃ ┣ 📜line following with object recognition.mp4
- ┃ ┣ 📜OR modify frame rate.mp4
- ┃ ┣ 📜OR modify image size.mp4
- ┃ ┣ 📜OR_Publisher.mp4
- ┃ ┣ 📜screenshot video.mp4
- ┃ ┗ 📜white line following video.mp4
- ┣ 📜Robotics(Assignment3).docx
- ┣ 📜Robotics(Assignment3).pdf
+ ┣ 📂jetbot
+ ┣ 📂Jetbotpy
+ ┣ 📂Videos
+ ┃ ┣ 📂Zehao
+ ┃ ┃ ┣ 📂Images
+ ┃ ┃ ┣ 📜black line following video.mp4
+ ┃ ┃ ┣ 📜line following with object recognition.mp4
+ ┃ ┃ ┣ 📜OR modify frame rate.mp4
+ ┃ ┃ ┣ 📜OR modify image size.mp4
+ ┃ ┃ ┣ 📜OR_Publisher.mp4
+ ┣ 📜LICENSE
  ┗ 📜README.md
 </pre>
 
