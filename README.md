@@ -1,4 +1,8 @@
 # Assignment 3 - Jetbot
+## GitHub Repository Access Link
+### [Assignment 3: JetBot line Following & Object Detection](https://github.com/alstondu/jetbot-ass3)  
+### [YOLOv5: Duckietown recognition model training](https://github.com/yezehao/yolov5)
+******
 ## Task: Line Following & Object Detection
 
 The aim of the project is to deploy the programmes on the JetBot robot to enable it to perform patrol and object detection tasks. There are two versions of the programmes: the Python version and the ROS version. 
@@ -74,8 +78,39 @@ roslaunch jetbot jetbot.launch
 ```
 
 </details>
+******
+## Structure of the Repository
 
+<pre>
+📦Assignment 3: Jetbot 
+ ┣ 📂Code
+ ┃ ┣ 📂jetbot
+ ┃ ┣ 📂Jetbotpy
+ ┃ ┗ 📂yolov5
+ ┣ 📂Testing Videos
+ ┃ ┣ 📂Images
+ ┃ ┣ 📜black line following video.mp4
+ ┃ ┣ 📜line following with object recognition.mp4
+ ┃ ┣ 📜OR modify frame rate.mp4
+ ┃ ┣ 📜OR modify image size.mp4
+ ┃ ┣ 📜OR_Publisher.mp4
+ ┃ ┣ 📜screenshot video.mp4
+ ┃ ┗ 📜white line following video.mp4
+ ┣ 📜Robotics(Assignment3).docx
+ ┣ 📜Robotics(Assignment3).pdf
+ ┗ 📜README.md
+</pre>
 
+Folder / File | Description
+:---: | :---
+📂/Code/jetbot/ | The ROS version programme which can be run through rosrun and launch file.
+📂/Code/Jetbotpy/ | The Python version programme which can be run in Python3.6 environment.
+📂/Code/yolov5/ | The [GitHub repo](https://github.com/yezehao/yolov5) used to train the object recognition model.
+📂/Testing Video/Images/ | The original image used in the report.
+📜Robotics(Assignment3).docx| The exclusive summary with appendicies.
+📜Robotics(Assignment3).pdf| The exclusive summary with appendicies.
+
+******
 ## Contribution
 |Name|Line Following|Obstcale Detection|Object Recognition|ROS Implementation|Code integration|GitHub Repo Maintenance|Attendance|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
