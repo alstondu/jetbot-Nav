@@ -9,7 +9,7 @@ The aim of the project is to deploy the programmes on the JetBot robot to enable
 <details open>
 <summary>Python Scripts</summary>
 
-The [Line Following + TOF programme](https://github.com/alstondu/jetbot-ass3/tree/main/Jetbotpy/jetbot) to accomplish tasks about line following and obstcale detection.
+The [Line Following + TOF programme](https://github.com/alstondu/jetbot-ass3/tree/main/Jetbotpy/jetbot) to accomplish tasks of line following and obstcale detection.
 
 ```commandline
 cd ~
@@ -17,7 +17,7 @@ cd Jetbotpy/jetbot/
 python3.6 LineFollower+TOF.py
 ```
 
-The [object detection programme](https://github.com/alstondu/jetbot-ass3/tree/main/Jetbotpy/yolov5) to accomplish task about object recognition.
+The [object detection programme](https://github.com/alstondu/jetbot-ass3/tree/main/Jetbotpy/yolov5) to accomplish task of object recognition.
 
 ```commandline
 cd ~
@@ -37,25 +37,25 @@ The ROS node initialization.
 roscore
 ```
 
-The ROS node [Robot_Movement.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/Robot_Movement.py) to subscrible the information from publishers and control the moter of Jetbot robot.
+The [Robot_Movement.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/Robot_Movement.py) programme defines a ROS node that subscribles to topics from publishers and controls the movement of the Jetbot.
 
 ```commandline
 rosrun jetbot Robot_Movement.py
 ```
 
-The ROS node [LF_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/LF_Publisher.py) to publish the line following command.
+The [LF_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/LF_Publisher.py) programme defines a ROS node that publishes the line following commands.
 
 ```commandline
 rosrun jetbot LF_Publisher.py
 ```
 
-The ROS node [TOF_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/TOF_Publisher.py) to publish the TOF command.
+The [TOF_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/jetbot/TOF_Publisher.py) programme defines a ROS node that publishes the TOF commands.
 
 ```commandline
 rosrun jetbot TOF_Publisher.py
 ```
 
-The ROS node [OR_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/yolov5/OR_Publisher.py) to publish the Object-Detection command.
+The [OR_Publisher.py](https://github.com/alstondu/jetbot-ass3/blob/main/jetbot/scripts/yolov5/OR_Publisher.py) programme defines a ROS node that publishes the Object-Detection commands.
 
 ```commandline
 rosrun jetbot OR_Publisher.py
@@ -65,12 +65,23 @@ rosrun jetbot OR_Publisher.py
 
 
 <details open>
-<summary>ROS Nodes</summary>
+<summary>ROS Launch File</summary>
 
-ROS launch command execution
+ROS launch command execution.
 
 ```commandline
 roslaunch jetbot jetbot.launch
 ```
 
 </details>
+
+
+## Contribution
+|Name|Line Following|Obstcale Detection|Object Recognition|ROS Implementation|Code integration|GitHub Repo Maintenance|Attendance|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Alhuwayji, Abdullah Ahmed A|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|
+|Du, Yuang|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|
+|Luo, Yanbin|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|
+|Stoian, Geanina Nicoleta|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|
+|Ye, Zehao|<span style="color:red">&#10008;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|<span style="color:red">&#10008;</span>|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|<span style="color:green">&#10004;</span>|
+
