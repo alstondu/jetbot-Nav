@@ -108,12 +108,9 @@ roslaunch jetbot jetbot.launch
 
 Folder / File | Description
 :---: | :---
-📂/Code/jetbot/ | The ROS version programme which can be run through rosrun and launch file.
-📂/Code/Jetbotpy/ | The Python version programme which can be run in Python3.6 environment.
-📂/Code/yolov5/ | The [GitHub repo](https://github.com/yezehao/yolov5) used to train the object recognition model.
-📂/Testing Video/Images/ | The original image used in the report.
-📜Robotics(Assignment3).docx| The exclusive summary with appendicies.
-📜Robotics(Assignment3).pdf| The exclusive summary with appendicies.
+📂jetbot/ | The ROS version programme which can be run through rosrun and launch file.
+📂Jetbotpy/ | The Python version programme which can be run in Python3.6 environment.
+📂/Video/Zehao/Image/ | The original image used in the report.
 
 ******
 ## Contribution
