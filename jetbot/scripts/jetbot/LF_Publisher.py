@@ -12,9 +12,9 @@ import numpy as np
 import Camera  #Library defines the CSI camera parameters
 
 #Define a node named 'LF_Publisher'
-rospy.init_node('LF_Publisher', anonymous=True)
+rospy.init_node('LF_Publisher')
 #The topic published by the node is a string named 'LF_Command'
-pub = rospy.Publisher('LF_Command', String, queue_size=10)
+pub = rospy.Publisher('/LF_Command', String, queue_size=10)
 #Define the publish rate
 rate = rospy.Rate(30) # 30hz
 
