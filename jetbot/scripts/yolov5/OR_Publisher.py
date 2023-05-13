@@ -54,9 +54,9 @@ import rospy
 from std_msgs.msg import String
 
 #Define a node named 'OR_Publisher'
-rospy.init_node('OR_Publisher', anonymous=True)
+rospy.init_node('OR_Publisher')
 #The topic published by the node is a string named 'OR_Status'
-pub = rospy.Publisher('OR_Status', String, queue_size=10)
+pub = rospy.Publisher('/OR_Status', String, queue_size=10)
 rate = rospy.Rate(30) # 30hz
 
 @smart_inference_mode()
