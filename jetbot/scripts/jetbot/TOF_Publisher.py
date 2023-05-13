@@ -9,8 +9,8 @@ import vl53l5cx_ctypes as vl53l5cx
 from vl53l5cx_ctypes import STATUS_RANGE_VALID, STATUS_RANGE_VALID_LARGE_PULSE
 
 def TOF_publisher():
-    rospy.init_node('TOF_Publisher', anonymous=True)  #Define a node named 'TOF_Publisher'
-    pub = rospy.Publisher('TOF', String, queue_size=10)  #The topic published by the node is a string named 'TOF'
+    rospy.init_node('TOF_Publisher')  #Define a node named 'TOF_Publisher'
+    pub = rospy.Publisher('/TOF', String, queue_size=10)  #The topic published by the node is a string named 'TOF'
     rate = rospy.Rate(10) # 10 Hz
     print("Uploading firmware, please wait...")
     vl53 = vl53l5cx.VL53L5CX()
