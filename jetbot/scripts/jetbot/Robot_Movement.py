@@ -17,8 +17,8 @@ stop1 = False
 stop2 = False
 
 def Jetbot_Subscriber():
-    rospy.init_node('Jetbot_Subscriber', anonymous=True)  #Define a node named 'Jetbot_Subscriber'
-    rospy.Subscriber("LF_Command", String, callback_Camera)  #Subscribe to the topic 'LF_Command'
+    rospy.init_node('Jetbot_Subscriber')  #Define a node named 'Jetbot_Subscriber'
+    rospy.Subscriber("/LF_Command", String, callback_Camera)  #Subscribe to the topic 'LF_Command'
     rospy.spin()
 
 #Callback function for the 'OR_Status' topic
@@ -45,9 +45,9 @@ def callback_TOF(data):
 def callback_Camera(data):
     global stop1, stop2
     #Subscribe to the topic 'OR_Status'
-    rospy.Subscriber("OR_Status", String, callback_Recognition)
+    rospy.Subscriber("/OR_Status", String, callback_Recognition)
     #Subscribe to the topic 'TOF'
-    rospy.Subscriber("TOF", String, callback_TOF)
+    rospy.Subscriber("/TOF", String, callback_TOF)
     #Whenever the object is recognized or obstacle is detected
     if stop1 == True or stop2 == True:
         robot.stop()  #The robot stops
