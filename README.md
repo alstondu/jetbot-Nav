@@ -1,4 +1,4 @@
-# Assignment 3 - Jetbot
+# Jetbot Navigation
 ## GitHub Repository Access Link
 ### [Assignment 3: JetBot line Following & Object Detection](https://github.com/alstondu/jetbot-ass3)  
 ### [YOLOv5: Duckietown recognition model training](https://github.com/yezehao/yolov5)
